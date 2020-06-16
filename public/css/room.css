@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+  color: white;
+}
+input {
+  width: 80%;
+  padding: 2px 0 10px 0;
+}
+.chat-box {
+  background: #11161a;
+  height: 60vh;
+  overflow-y: scroll;
+}
+.chats {
+  list-style: none;
+  width: 50%;
+  background: #f3f3f3;
+  padding: 10px 0 10px 10px;
+  margin: 10px 0;
+}
+.altchats {
+  list-style: none;
+  width: 50%;
+  background: #f3f3f3;
+  padding: 10px 0 10px 10px;
+  right: 0;
+  margin: 10px 0;
+  margin-left: 400px;
+}
+.title {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.box {
+  background: #2f3542;
+  height: 90vh;
+  width: 80vw;
+}
+li {
+  list-style: none;
+  color: orange;
+  font-weight: lighter;
+  cursor: pointer;
+}
+p {
+  display: inline;
+}
+.name {
+  font-weight: lighter;
+  color: red;
+}
+span {
+  padding-left: 5px;
+  color: blueviolet;
+  font-weight: normal;
+}
+.room-name {
+  background: black;
+  color: rgb(208, 255, 0);
+  text-align: center;
+  font-weight: lighter;
+  width: 80%;
+}
+h6 {
+  color: black;
+}
+.room {
+  overflow-y: scroll;
+}
+.users li {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.notify {
+  margin-top: 20px;
+  margin-left: 300px;
+  color: white;
+}
+li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(62, 233, 62); /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+}

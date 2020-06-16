@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/room.css" />
+    <title>FanCord</title>
+  </head>
+  <body>
+    <div class="box mx-auto my-5">
+      <div class="container ">
+        <div class="row justify-content-between pt-2 title">
+          <div>
+            <h1>FanCord <i class="fab fa-discord"></i></h1>
+          </div>
+          <div>
+            <a class="btn btn-danger" href="index.html">Leave room</a>
+          </div>
+        </div>
+          <div class="row justify-content-between">
+            <div class="col-3 room" >
+                <div>
+                    <h4><i class="far fa-comments"></i> Room name:</h4>
+                    <h4 class="room-name p-2"></h4>
+                </div>
+              <div class="users">
+                  <h3><i class="fas fa-users"></i> Users</h3>
+              </div>
+            </div>
+            <div class="col-9 chat-box"> 
+            </div>
+            </div>
+          </div>
+          <div class="row justify-content-end mt-5">
+              <div class="col-10 send-message" >
+                <form id="send">
+                    <input type="text" placeholder="Type Message" id="msg" class="text-center font-italic" required />
+                    <button class="btn btn-success p-2" >Send <i class="far fa-paper-plane"></i></button>
+                  </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

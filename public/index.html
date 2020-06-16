@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>FanCord</title>
+  </head>
+  <body>
+    <div class="container menu w-50">
+      <h1>FanCord <i class="fab fa-discord"></i></h1>
+      <form action="room.html">
+        <label for="username" class="form">Username:</label>
+        <div class="row justify-content-center">
+          <input
+            type="text"
+            placeholder="enter name"
+            name="Username"
+            id="username"
+            required
+          />
+        </div>
+        <label for="room" class="form">Room:</label>
+        <div class="row justify-content-center">
+          <select id="Room" name="Room">
+            <option>Dark</option>
+            <option>The Punisher</option>
+            <option>Breaking Bad</option>
+            <option>Prison Break</option>
+            <option>Better Call Saul</option>
+            <option>Mirzapur</option>
+            <option>Pitchers</option>
+            <option>The Family Man</option>
+          </select>
+        </div>
+        <div class="row justify-content-center">
+          <button class="btn btn-info mt-3">
+            Join Chat
+            <i class="far fa-comments pl-2"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
